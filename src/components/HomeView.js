@@ -40,6 +40,7 @@ class HomeView extends Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({
+          pagesCount:data.meta.pagination.pages,
           data: data.data.slice(0, 5),
           filteredData: data.data.slice(0, 5),
           tableLoading: false,
@@ -155,7 +156,7 @@ class HomeView extends Component {
             <Grid container>
               <Grid item className={classes.pagination}>
                 <Pagination
-                  count={10}
+                  count={this.state.pagesCount}
                   defaultPage={parseInt(this.state.page) ?? 1}
                   color="primary"
                   onChange={(e, v) => {
