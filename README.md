@@ -12,3 +12,10 @@ Application that fetches data from [gorest.co.in](https://gorest.co.in/)  and sh
 
 #### Running
 As normal React app - npm install && npm start
+
+### Images
+<img src="https://i.imgur.com/KTZ993u.png" width="1000" height="600"/>
+
+<img src="https://i.imgur.com/531SOTb.png" width="1000" height="600"/>
+
+<img src="https://i.imgur.com/IO4U5DJ.png" width="1000" height="600"/>
